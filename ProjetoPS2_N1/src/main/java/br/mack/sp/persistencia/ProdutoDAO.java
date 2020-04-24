@@ -6,7 +6,10 @@ import java.util.List;
 
 public interface ProdutoDAO {
     boolean create(Produto produto);
+
     List<Produto> read();
+
     boolean update(Produto produto);
-    boolean delete (Produto produto);
+
+    boolean delete(Produto produto);
 }

@@ -1,6 +1,5 @@
 package br.mack.sp.persistencia;
 
-
 import br.mack.sp.entities.Produto;
 
 import java.sql.Connection;
@@ -10,7 +9,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ProdutoDAOMySQL implements ProdutoDAO{
+public class ProdutoDAOMySQL implements ProdutoDAO {
     private String createSQL = "INSERT INTO produto (descricao, marca, preco) VALUES (?, ?, ?)";
     private String readSQL = "SELECT * FROM produto;";
     private String updateSQL = "UPDATE produto SET descricao = ?, marca = ?, preco = ? WHERE id = ?";
@@ -24,19 +23,18 @@ public class ProdutoDAOMySQL implements ProdutoDAO{
         try {
             PreparedStatement pstm = conn.prepareStatement(createSQL);
 
-            pstm.setString(1,produto.getDescricao());
-            pstm.setString(2,produto.getMarca());
+            pstm.setString(1, produto.getDescricao());
+            pstm.setString(2, produto.getMarca());
             pstm.setDouble(3, produto.getPreco());
 
             int registros = pstm.executeUpdate();
 
-            return (registros>0);
+            return (registros > 0);
 
         } catch (SQLException e) {
             System.out.println("Falha de conexão com a base de dados");
             e.printStackTrace();
-        }
-        finally{
+        } finally {
             try {
                 conn.close();
             } catch (SQLException e) {
@@ -51,13 +49,13 @@ public class ProdutoDAOMySQL implements ProdutoDAO{
         Connection conn = mySQL.getConnection();
         List<Produto> produtos = new ArrayList<>();
 
-        try{
+        try {
             PreparedStatement pstm = conn.prepareStatement(readSQL);
             ResultSet rs = pstm.executeQuery();
 
             while (rs.next()) {
                 Produto produto = new Produto();
-                produto.setId(rs.getLong("id_produto"));
+                produto.setId(rs.getLong("id"));
                 produto.setDescricao(rs.getString("descricao"));
                 produto.setMarca(rs.getString("marca"));
                 produto.setPreco(rs.getDouble("preco"));
@@ -68,12 +66,12 @@ public class ProdutoDAOMySQL implements ProdutoDAO{
         } catch (final SQLException e) {
             System.out.println("Falha de conexão com a base de dados");
             e.printStackTrace();
-        } catch(final Exception e){
+        } catch (final Exception e) {
             e.printStackTrace();
-        } finally{
-            try{
+        } finally {
+            try {
                 conn.close();
-            } catch (final Exception e){
+            } catch (final Exception e) {
                 e.printStackTrace();
             }
         }
@@ -86,20 +84,19 @@ public class ProdutoDAOMySQL implements ProdutoDAO{
         try {
             PreparedStatement pstm = conn.prepareStatement(updateSQL);
 
-            pstm.setString(1,produto.getDescricao());
-            pstm.setString(2,produto.getMarca());
+            pstm.setString(1, produto.getDescricao());
+            pstm.setString(2, produto.getMarca());
             pstm.setDouble(3, produto.getPreco());
-            pstm.setLong(4,produto.getId());
+            pstm.setLong(4, produto.getId());
 
             int registros = pstm.executeUpdate();
 
-            return (registros>0);
+            return (registros > 0);
 
         } catch (SQLException e) {
             System.out.println("Falha de conexão com a base de dados");
             e.printStackTrace();
-        }
-        finally{
+        } finally {
             try {
                 conn.close();
             } catch (SQLException e) {
@@ -110,24 +107,23 @@ public class ProdutoDAOMySQL implements ProdutoDAO{
     }
 
 
-
     @Override
     public boolean delete(Produto produto) {
         Connection conn = mySQL.getConnection();
-        try{
+        try {
             PreparedStatement pstm = conn.prepareStatement(deleteSQL);
-            pstm.setLong(1,produto.getId());
+            pstm.setLong(1, produto.getId());
             int registros = pstm.executeUpdate();
-            return registros>0;
-        } catch(final SQLException e){
+            return registros > 0;
+        } catch (final SQLException e) {
             System.out.println("Falha de conexão com a base de dados");
             e.printStackTrace();
-        }catch (final Exception e){
+        } catch (final Exception e) {
             e.printStackTrace();
         } finally {
-            try{
+            try {
                 conn.close();
-            }catch(final Exception e){
+            } catch (final Exception e) {
                 e.printStackTrace();
             }
         }

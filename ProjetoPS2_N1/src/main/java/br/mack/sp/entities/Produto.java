@@ -16,6 +16,7 @@ public class Produto {
     public Produto() {
 
     }
+
     public Long getId() {
         return id;
 
@@ -51,11 +52,11 @@ public class Produto {
 
     @Override
     public String toString() {
-        return "Produto{" +
-                "id=" + id +
-                ", descricao='" + descricao + '\'' +
-                ", marca='" + marca + '\'' +
-                ", preco=" + preco +
+        return "Produto {" +
+                "ID = " + id +
+                ", Descrição = '" + descricao + '\'' +
+                ", Marca = '" + marca + '\'' +
+                ", Preço = " + preco +
                 '}';
     }
 }

@@ -7,20 +7,22 @@ public class Computador {
     private int qtde_ram;
     private int tmn_disco;
 
-    public Computador(){
+    public Computador() {
         this.id_computador = null;
         this.marca = "Marca não inserida";
         this.processador = "Processador não inserido";
         this.qtde_ram = -1;
         this.tmn_disco = -1;
     }
-    public Computador (long id, String marca, String processador, int qtde_ram, int tmn_disco){
-        this.id_computador = id;
+
+    public Computador(long id_computador, String marca, String processador, int qtde_ram, int tmn_disco) {
+        this.id_computador = id_computador;
         this.marca = marca;
         this.processador = processador;
         this.qtde_ram = qtde_ram;
         this.tmn_disco = tmn_disco;
     }
+
     public Long getId_computador() {
         return id_computador;
     }
@@ -64,11 +66,11 @@ public class Computador {
     @Override
     public String toString() {
         return "Computador{" +
-                "id=" + id_computador +
-                ", marca='" + marca + '\'' +
-                ", processador='" + processador + '\'' +
-                ", qtde_ram=" + qtde_ram +
-                ", tmn_disco=" + tmn_disco +
+                "ID =" + id_computador +
+                ", Marca = '" + marca + '\'' +
+                ", Processador = '" + processador + '\'' +
+                ", Quantidade de RAM = " + qtde_ram +
+                ", Tamanho do disco = " + tmn_disco +
                 '}';
     }
 }
