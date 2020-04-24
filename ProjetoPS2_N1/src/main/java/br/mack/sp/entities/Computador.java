@@ -1,32 +1,32 @@
 package br.mack.sp.entities;
 
 public class Computador {
-    private Long id;
+    private Long id_computador;
     private String marca;
     private String processador;
     private int qtde_ram;
     private int tmn_disco;
 
     public Computador(){
-        this.id = null;
+        this.id_computador = null;
         this.marca = "Marca não inserida";
         this.processador = "Processador não inserido";
         this.qtde_ram = -1;
         this.tmn_disco = -1;
     }
     public Computador (long id, String marca, String processador, int qtde_ram, int tmn_disco){
-        this.id= id;
+        this.id_computador = id;
         this.marca = marca;
         this.processador = processador;
         this.qtde_ram = qtde_ram;
         this.tmn_disco = tmn_disco;
     }
-    public Long getId() {
-        return id;
+    public Long getId_computador() {
+        return id_computador;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setId_computador(Long id_computador) {
+        this.id_computador = id_computador;
     }
 
     public String getMarca() {
@@ -64,7 +64,7 @@ public class Computador {
     @Override
     public String toString() {
         return "Computador{" +
-                "id=" + id +
+                "id=" + id_computador +
                 ", marca='" + marca + '\'' +
                 ", processador='" + processador + '\'' +
                 ", qtde_ram=" + qtde_ram +
