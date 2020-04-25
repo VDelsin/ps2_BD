@@ -15,11 +15,7 @@
       </list>
     </option>
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
   <component name="ProjectId" id="1asDvPHzZZJSBK2sf2tbtm6Uh7l" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -27,7 +23,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../GitHub N1/ps2_BD/ProjetoPS2_N1" />
   </component>
   <component name="RunManager">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -79,30 +75,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="756" y="379" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1587677992295" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1587758052047">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1587758759404">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1587758052047" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1587758759404" />
     <state x="1018" y="603" key="Github.ShareDialog" timestamp="1587517571001">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1018" y="603" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587517571001" />
-    <state width="1877" height="314" key="GridCell.Tab.0.bottom" timestamp="1587758799775">
+    <state width="1877" height="96" key="GridCell.Tab.0.bottom" timestamp="1587758760805">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="314" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587758799775" />
-    <state width="1877" height="314" key="GridCell.Tab.0.center" timestamp="1587758799774">
+    <state width="1877" height="96" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587758760805" />
+    <state width="1877" height="96" key="GridCell.Tab.0.center" timestamp="1587758760805">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="314" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587758799774" />
-    <state width="1877" height="314" key="GridCell.Tab.0.left" timestamp="1587758799774">
+    <state width="1877" height="96" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587758760805" />
+    <state width="1877" height="96" key="GridCell.Tab.0.left" timestamp="1587758760805">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="314" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587758799774" />
-    <state width="1877" height="314" key="GridCell.Tab.0.right" timestamp="1587758799775">
+    <state width="1877" height="96" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587758760805" />
+    <state width="1877" height="96" key="GridCell.Tab.0.right" timestamp="1587758760805">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="314" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587758799775" />
+    <state width="1877" height="96" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587758760805" />
     <state x="1010" y="470" key="com.intellij.ide.util.TipDialog" timestamp="1587711053051">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
